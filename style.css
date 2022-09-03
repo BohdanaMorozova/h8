@@ -5,7 +5,7 @@ body {
 .main {
   font-family: "Plus Jakarta Sans", sans-serif;
   margin: 32px;
-  width: 100%;
+  width: 1080px;
   height: 100%;
 }
 
@@ -39,6 +39,7 @@ body {
 .text--xl {
   font-size: 20px;
   letter-spacing: -0.02em;
+  line-height: 25.2px;
 }
 
 .text--b {
@@ -49,6 +50,11 @@ body {
 
 .text--fw {
   font-weight: 600;
+}
+
+.text--smmuted {
+  font-size: 14px;
+  color: #90a3bf;
 }
 
 .carreview {
@@ -181,11 +187,6 @@ span_number {
 }
 
 .date {
-  color: #90a3bf;
-  font-size: 14px;
-}
-
-.date {
   text-align: right;
 }
 
@@ -206,12 +207,6 @@ span_number {
   line-height: 200%;
 }
 
-.review_SD {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-}
-
 .extra {
   display: flex;
   justify-content: center;
@@ -226,15 +221,54 @@ span_number {
 }
 
 .recent_car_block {
-  width: 1016px;
-  height: 992px;
+  max-width: 1016px;
 }
 
 .recent_car_view {
   padding: 0px 50px 0px 28px;
-  margin-top: 42px;
+  margin: 42px 0px 26px;
 }
 
-.view-all {
+.blue-text {
   color: #3563e9;
+}
+
+.car-info {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.car-img {
+  height: 84px;
+  width: 272px;
+  margin: 52px 0px;
+}
+
+.price-n-button {
+  margin-top: 36px;
+  align-items: center;
+}
+
+.img-vector {
+  height: 22px;
+  width: 20px;
+}
+
+.mini-rent-button {
+  padding: 10px 20px;
+  background: #3563e9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 116px;
+  height: 44px;
+}
+
+.car-img-rec {
+  height: 112px;
+  width: 264px;
+  margin: 52px 0px;
+  padding: 4px;
 }
