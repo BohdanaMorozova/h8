@@ -5,101 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <title>h8</title>
   </head>
   <body>
-    <div>
+    <div class="main">
       <div class="flexbox-container">
-        <div class="flexbox-item flexbox-item-1">
-          <img class="img" src="View.jpg" alt="car" />
-          <div class="galery">
-            <img class="border" src="View1.jpg" alt="mini car" />
-            <img src="View2.jpg" alt="rudder" />
-            <img src="View 3.jpg" alt="cabin" />
+        <div class="carreview">
+          <img class="img" src="/images/view.jpg" alt="car" />
+          <div class="galery flexbox-item">
+            <img class="border" src="/images/view1.jpg" alt="mini car" />
+            <img src="/images/view2.jpg" alt="rudder" />
+            <img src="/images/view3.jpg" alt="cabin" />
           </div>
         </div>
 
-        <div class="flexbox-item flexbox-item-2">
-          <p>
-            <b><span>Nissan GT - R</span></b>
-            <img class="heart_img" src="heart.jpg" alt="heart" />
-          </p>
-          <div class="mark_n_followers">
-            <div class="stars">
-              <img src="star.jpg" alt="star" />
-              <img src="star.jpg" alt="star" />
-              <img src="star.jpg" alt="star" />
-              <img src="star.jpg" alt="star" />
-              <img src="star_empty.jpg" alt="empty_star" />
+        <div class="description_n_details">
+          <div>
+            <div class="flexbox-item">
+              <span>Nissan GT - R</span>
+              <img class="heart_img" src="/images/heart.jpg" alt="heart" />
             </div>
-            <span-2>440+ Reviewer</span-2>
+            <div class="mark_n_followers">
+              <div class="stars flexbox-item">
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star_empty.jpg" alt="empty_star" />
+              </div>
+              <span-reviewer class="text text--sm">440+ Reviewer</span-reviewer>
+            </div>
           </div>
-          <p class="description">
+          <p class="description text text--xl">
             NISMO has become the embodiment of Nissan's outstanding performance,
             inspired by the most unforgiving proving ground, the "race track".
           </p>
-          <div class="type_car">
-            <div class="column_1">
+          <div class="block-s-parametramy-automobilya flexbox-item">
+            <div class="text text--muted">
               <p>Type car</p>
               <p>Steering</p>
             </div>
-            <div class="column_2">
+            <div class="type_car_n_capacity">
               <p>Sport</p>
               <p>Manual</p>
             </div>
-            <div class="column_3">
+            <div class="text text--muted">
               <p>Capacity</p>
               <p>Gasoline</p>
             </div>
-            <div class="column_4">
+            <div class="type_car_n_capacity">
               <p>2 Person</p>
               <p>70L</p>
             </div>
           </div>
-          <div class="price">
+          <div class="price flexbox-item">
             <div>
-              <span>$80.00/</span>
-              <span_3>
+              <span-p>$80.00/</span-p>
+              <span_3 class="text--muted">
                 days<br />
                 <s>$100.00</s></span_3
               >
             </div>
-            <button class="button">Rent Now</button>
+            <button class="rent-button">Rent Now</button>
           </div>
         </div>
       </div>
 
-      <div class="flexbox-item flexbox-item-3">
-        <div class="reviews">
-          <b>Reviews</b>
-          <span_5>13</span_5>
+      <div class="all_reviews">
+        <div class="reviews text text--xl text--fw">
+          Reviews
+          <span_number>13</span_number>
         </div>
 
         <div>
-          <div class="main-review-AS">
-            <div class="reviewer_info">
-              <img class="photo_AS" src="AS.jpg" alt="man" />
-              <div class="review_AS">
-                <b class="name">Alex Stanton</b>
-                <p class="profession">CEO at Bukalapak</p>
+          <div class="flexbox-item">
+            <div class="reviewer-info">
+              <img class="photo_reviewer" src="/images/as.jpg" alt="man" />
+              <div class="review">
+                <b class="text text--xl text--b">Alex Stanton</b>
+                <p class="text text--sm text--muted">CEO at Bukalapak</p>
               </div>
             </div>
             <div class="date_n_mark">
               <p class="date">21 July 2022</p>
-              <div class="star">
-                <img src="star.jpg" alt="star" />
-                <img src="star.jpg" alt="star" />
-                <img src="star.jpg" alt="star" />
-                <img src="star.jpg" alt="star" />
-                <img src="star_empty.jpg" alt="empty_star" />
+              <div class="star flexbox-item">
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star_empty.jpg" alt="empty_star" />
               </div>
             </div>
           </div>
-          <p class="feedback_1">
+          <p class="feedback_review text text--sm">
             We are very happy with the service from the MORENT App. Morent has a
             low price and also a large variety of cars with good and comfortable
             facilities. In addition, the service provided by the officers is
@@ -108,26 +110,26 @@
         </div>
 
         <div>
-          <div class="main-review-SD">
-            <div class="reviewer_info_2">
-              <img class="photo_SD" src="SD.jpg" alt="woman" />
-              <div class="review_SD">
-                <b class="name">Skylar Dias</b>
-                <p class="profession">CEO at Amazon</p>
+          <div class="flexbox-item">
+            <div class="reviewer-info">
+              <img class="photo_reviewer" src="/images/sd.jpg" alt="woman" />
+              <div class="review">
+                <b class="text text--xl text--b">Skylar Dias</b>
+                <p class="text text--sm text--muted">CEO at Amazon</p>
               </div>
             </div>
-            <div class="date_n_mark_2">
-              <p class="date_2">20 July 2022</p>
-              <div class="star_2">
-                <img src="star.jpg" alt="star" />
-                <img src="star.jpg" alt="star" />
-                <img src="star.jpg" alt="star" />
-                <img src="star.jpg" alt="star" />
-                <img src="star_empty.jpg" alt="empty_star" />
+            <div class="date_n_mark">
+              <p class="date">20 July 2022</p>
+              <div class="star flexbox-item">
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star.jpg" alt="star" />
+                <img src="/images/star_empty.jpg" alt="empty_star" />
               </div>
             </div>
           </div>
-          <p class="feedback_2">
+          <p class="feedback_review text text--sm">
             We are greatly helped by the services of the MORENT Application.
             Morent has low prices and also a wide variety of cars with good and
             comfortable facilities. In addition, the service provided by the
@@ -136,8 +138,15 @@
         </div>
 
         <div class="extra">
-          <p class="text">Show all</p>
-          <img class="pointer" src="Vector.jpg" alt="pointer down" />
+          <p class="text text--muted">Show All</p>
+          <img class="pointer" src="/images/vector.jpg" alt="pointer down" />
+        </div>
+      </div>
+
+      <div class="recent_car_block">
+        <div class="recent_car_view flexbox-item">
+          <div class="text text--muted text--fw">Recent Car</div>
+          <div class="view-all text--fw">View all</div>
         </div>
       </div>
     </div>
