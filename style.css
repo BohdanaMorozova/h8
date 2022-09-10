@@ -14,7 +14,7 @@ body {
   margin-bottom: 32px;
 }
 
-.flex-container {
+.flex-between {
   display: flex;
   justify-content: space-between;
 }
