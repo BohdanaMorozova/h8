@@ -33,10 +33,6 @@ body {
   color: #3d5278;
 }
 
-.text--muted {
-  color: #90a3bf;
-}
-
 .text--sm {
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -52,6 +48,10 @@ body {
   font-weight: 700;
   color: #1a202c;
   letter-spacing: 0.02em;
+}
+
+.text--muted {
+  color: #90a3bf;
 }
 
 .text--bold {
@@ -260,4 +260,9 @@ span-number {
   height: 112px;
   width: 264px;
   padding: 52px 4px;
+}
+
+.footer {
+  max-width: 1440px;
+  background-color: #ffffff;
 }
