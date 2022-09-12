@@ -5,18 +5,26 @@ body {
 .main {
   font-family: "Plus Jakarta Sans", sans-serif;
   padding: 32px;
-  max-width: 1080px;
+  max-width: 1016px;
   height: 100%;
 }
 
 .hero-section {
   display: flex;
-  margin-bottom: 32px;
+  justify-content: space-between;
+  padding-bottom: 32px;
 }
 
 .flex-between {
   display: flex;
   justify-content: space-between;
+}
+
+.characteristic-flex-between {
+  display: flex;
+  justify-content: space-between;
+  max-width: 184px;
+  width: 100%;
 }
 
 .text {
@@ -62,21 +70,23 @@ body {
 
 .hero_section__gallery {
   height: 120px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .gallery__item--selected {
-  border: 6px solid white;
+  border: 2px solid #3563e9;
   border-radius: 10px;
+  padding: 6px;
 }
 
 .hero_section__description_block {
   background: white;
-  height: 482px;
-  justify-content: space-around;
+
+  justify-content: space-between;
   padding: 24px 24px 0px 24px;
   border-radius: 10px;
-  margin-left: 32px;
+  box-sizing: border-box;
+  max-width: 492px;
 }
 
 span {
@@ -103,26 +113,23 @@ span-reviewer {
 .description_block__reviews {
   display: flex;
   justify-content: flex-start;
-  margin-top: 12px;
+  padding-top: 12px;
 }
 
-.description_block__title {
+.description_block__desc {
   line-height: 40px;
   text-align: justify;
-  margin-top: 42px;
+  padding: 44px 0px 12px;
+  margin: 0px;
 }
 
-.block-s-parametramy-automobilya {
+.characteristics {
   height: 120px;
-  margin-top: 24px;
-}
-
-.block-s-parametramy-automobilya__type-car-n-capacity {
-  text-align: end;
+  padding-top: 24px;
 }
 
 .description_block__price {
-  margin-top: 50px;
+  padding-top: 40px;
   letter-spacing: -0.02em;
 }
 
@@ -151,31 +158,32 @@ span-number {
   background: #3563e9;
   color: white;
   padding: 6px 16px;
-  margin-left: 12px;
   border-radius: 4px;
 }
 
 .all-reviews__reviews {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: #1a202c;
+  max-width: 142px;
 }
 
 .reviewer-info__photo-reviewer {
   height: 56px;
   width: 56px;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .reviewer-info__review {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
-.flex-container__reviewer-info {
+.flex-between__reviewer-info {
   display: flex;
-  margin: 26px 0px 0px 6px;
+  padding: 26px 0px 0px 6px;
 }
 
 .reviews__date {
@@ -185,7 +193,7 @@ span-number {
 .reviews {
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px;
+  padding: 20px;
 }
 
 .reviews__feedback {
@@ -208,8 +216,7 @@ span-number {
 }
 
 .recent-car-view {
-  padding: 0px 50px 0px 28px;
-  margin: 42px 0px 26px;
+  padding: 42px 50px 26px 28px;
 }
 
 .recent-car-view__item {
@@ -225,11 +232,11 @@ span-number {
 .car-info__car-img {
   height: 84px;
   width: 272px;
-  margin: 52px 0px;
+  padding: 52px 0px;
 }
 
 .car-info__price-n-button {
-  margin-top: 36px;
+  padding-top: 36px;
   align-items: center;
 }
 
@@ -252,6 +259,5 @@ span-number {
 .car-info__car-img-rec {
   height: 112px;
   width: 264px;
-  margin: 52px 0px;
-  padding: 4px;
+  padding: 52px 4px;
 }
