@@ -12,9 +12,70 @@
     <title>h8</title>
   </head>
   <body>
+    <div class="container flex-between">
+     <div class="sidebar">
+      <div>
+      <div class="text text--wee">T Y P E</div>
+      <form class="text text--xl text--bold">
+        <label class="sidebar__checkbox">
+         <input type="checkbox" name="type" value="sport" checked>
+         Sport  <span class="text text--muted text--xl"> (10)</span>
+        </label>
+         <label class="sidebar__checkbox">
+          <input type="checkbox" name="type" value="sport" checked>
+          SUV  <span class="text text--muted text--xl"> (12)</span>
+         </label>
+         <label class="sidebar__checkbox">
+          <input type="checkbox" name="type" value="sport">
+          MPV  <span class="text text--muted text--xl"> (16)</span>
+         </label>
+         <label class="sidebar__checkbox">
+          <input type="checkbox" name="type" value="sport">
+          Sedan  <span class="text text--muted text--xl"> (20)</span>
+         </label>
+         <label class="sidebar__checkbox">
+          <input type="checkbox" name="type" value="sport">
+          Coupe <span class="text text--muted text--xl"> (14)</span>
+         </label>
+         <label class="sidebar__checkbox">
+          <input type="checkbox" name="type" value="sport">
+          Hatchback  <span class="text text--muted text--xl"> (14)</span>
+         </label>
+      </form>
+      </div>
+      
+      <div class="padding-bottom">
+        <div class="text text--wee">C A P A C I T Y</div>
+        <form class="text text--xl text--bold">
+          <label class="sidebar__checkbox">
+           <input type="checkbox" name="type" value="sport" checked>
+           2 Person  <span class="text text--muted text--xl"> (10)</span>
+          </label>
+           <label class="sidebar__checkbox">
+            <input type="checkbox" name="type" value="sport">
+            4 Person <span class="text text--muted text--xl"> (14)</span>
+           </label>
+           <label class="sidebar__checkbox">
+            <input type="checkbox" name="type" value="sport">
+            6 Person  <span class="text text--muted text--xl"> (12)</span>
+           </label>
+           <label class="sidebar__checkbox">
+            <input type="checkbox" name="type" value="sport" checked>
+            8 or more<span class="text text--muted text--xl"> (16)</span>
+           </label>
+        </form>
+        </div>
+        
+        <div>
+        <div class="text text--wee">P R I C E</div>
+        <input class="sidebar__input" name="price" type="range"  min="0" max="100" step="10" value="70"/>
+        <p class="text text--bold text--xl">Max. $100.00</p>
+      </div>
+      </div>
+
     <div class="main">
       <div class="hero-section">
-        <div class="hero-section__img_block">
+        <div class="hero-section__img_container">
           <img class="hero_section__hero_image" src="images/main/view.jpg" alt="car" />
           <div class="hero_section__gallery flex-between">
             <img class="gallery__item--selected" src="images/main/view1.jpg" alt="mini car" />
@@ -23,8 +84,7 @@
           </div>
         </div>
 
-        <div class="hero_section__description_block">
-          <div>
+        <div class="hero_section__description">
             <div class="flex-between">
               <span>Nissan GT - R</span>
               <img
@@ -33,77 +93,76 @@
                 alt="heart"
               />
             </div>
-            <div class="description_block__reviews">
-              <div class="reviews__rating flex-between">
+            <div class="description__reviews">
+              <div class="rating__img flex-between">
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star_empty.jpg" alt="empty_star" />
               </div>
-              <span-reviewer class="text text--sm">440+ Reviewer</span-reviewer>
+              <span class="reviewer text text--sm">440+ Reviewer</span>
             </div>
-          </div>
-          <p class="description_block__desc text text--xl">
+          <p class="description__container text text--xl">
             NISMO has become the embodiment of Nissan's outstanding performance,
             inspired by the most unforgiving proving ground, the "race track".
           </p>
-          <div class="description_block__characteristics">
+          <div class="description__specs">
             <div class="flex-between">
-              <div class="characteristic-flex-between">
+              <div class="specs__item">
                 <p class="text text--muted">Type car</p>
                 <p>Sport</p>
               </div>
-              <div class="characteristic-flex-between">
+              <div class="specs__item">
                 <p class="text text--muted">Capacity</p>
                 <p>2 Person</p>
               </div>
             </div>
 
             <div class="flex-between">
-            <div class="characteristic-flex-between">
+            <div class="specs__item">
               <p class="text text--muted">Steering</p>
               <p>Manual</p>
             </div>
             
-            <div class="characteristic-flex-between">
+            <div class="specs__item">
               <p class="text text--muted">Gasoline</p>
               <p>70L</p>
             </div>
           </div>
 
           </div>
-          <div class="description_block__price flex-between">
+          <div class="description__price flex-between">
             <div>
-              <span-price>$80.00/</span-price>
-              <span-text class=" text text--muted">
+              <span class="price">$80.00/</span>
+              <span class="text text--muted text--bold">
                 days<br />
-                <s>$100.00</s></span-text
+                <s>$100.00</s></span
               >
             </div>
-            <button class="price__rent-button">Rent Now</button>
+            <button class="price__rent-button line-height text text--b">Rent Now</button>
           </div>
         </div>
       </div>
 
       <div class="all-reviews">
-        <div class="all-reviews__reviews text text--xl text--bold">
+        <div class="all_reviews__total text text--xl text--bold">
           Reviews
-          <span-number>13</span-number>
+          <p class="all-reviews__number">13</p>
         </div>
 
         <div>
           <div class="flex-between">
             <div class="flex-between__reviewer-info">
-              <img class="reviewer-info__photo-reviewer" src="images/main/as.jpg" alt="man" />
-              <div class="reviewer-info__review">
+              <img class="reviewer-info__avatar" src="images/main/as.jpg" alt="man" />
+              <div class="reviewer-info__name-workplace">
                 <b class="text text--xl text--b">Alex Stanton</b>
                 <p class="text text--sm text--muted">CEO at Bukalapak</p>
               </div>
             </div>
-            <div class="reviews">
-              <p class="reviews__date text text--sm text--muted">21 July 2022</p>
-              <div class="reviews__rating flex-between">
+            <div class="rating">
+              <p class="rating__date text text--sm text--muted">21 July 2022</p>
+              <div class="rating__img flex-between">
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
@@ -124,18 +183,18 @@
           <div class="flex-between">
             <div class="flex-between__reviewer-info">
               <img
-                class="reviewer-info__photo-reviewer"
+                class="reviewer-info__avatar"
                 src="images/main/sd.jpg"
                 alt="woman"
               />
-              <div class="reviewer-info__review">
+              <div class="reviewer-info__name-workplace">
                 <b class="text text--xl text--b">Skylar Dias</b>
                 <p class="text text--sm text--muted">CEO at Amazon</p>
               </div>
             </div>
-            <div class="reviews">
-              <p class="reviews__date text text--sm text--muted">20 July 2022</p>
-              <div class="reviews__rating flex-between">
+            <div class="rating">
+              <p class="rating__date text text--sm text--muted">20 July 2022</p>
+              <div class="rating__img flex-between">
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
                 <img src="images/vector/star.jpg" alt="star" />
@@ -165,7 +224,7 @@
       <div>
         <div class="recent-car-view flex-between">
           <div class="text text--muted text--bold">Recent Car</div>
-          <div class="recent-car-view__item text--bold">View all</div>
+          <div class="text text--color text--bold">View all</div>
         </div>
 
         <div class="flex-between">
@@ -207,7 +266,7 @@
                 <span class="text text--xl text--b">$99.00/</span>
                 <span class="text text--sm text--muted text--b">day</span>
               </div>
-              <button class="car-info__mini-rent-button text">Rent Now</button>
+              <button class="car-info__mini-rent-button line-height text">Rent Now</button>
             </div>
           </div>
 
@@ -252,7 +311,7 @@
                   <br />
                   <div class="text text--b text--sm text--muted"><s>$100.00</s></div>
               </div>
-              <button class="car-info__mini-rent-button text">Rent Now</button>
+              <button class="car-info__mini-rent-button line-height text">Rent Now</button>
             </div>
           </div>
 
@@ -294,16 +353,16 @@
                 <span class="text text--xl text--b">$96.00/</span>
                 <span class="text text--sm text--muted text--b">day</span>
               </div>
-              <button class="car-info__mini-rent-button text">Rent Now</button>
+              <button class="car-info__mini-rent-button line-height text">Rent Now</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="recent-car-block">
+      <div class="recent-car-container">
       <div class="recent-car-view flex-between">
-        <div class="recent-car-view__item text text--bold">Recomendation Car</div>
-        <div class="recent-car-view__item text--bold">View all</div>
+        <div class="text text--bold text--color">Recomendation Car</div>
+        <div class="text text--color text--bold">View all</div>
       </div>
 
       <div class="flex-between">
@@ -348,7 +407,7 @@
                 <br />
                 <div class="text text--b text--sm text--muted"><s>$80.00</s></div>
             </div>
-            <button class="car-info__mini-rent-button text">Rent Now</button>
+            <button class="car-info__mini-rent-button line-height text">Rent Now</button>
           </div>
         </div>
 
@@ -391,7 +450,7 @@
                 >$80.00/
                 <span class="text text--sm text--muted text--b">day</span>
             </div>
-            <button class="car-info__mini-rent-button text">Rent Now</button>
+            <button class="car-info__mini-rent-button line-height text">Rent Now</button>
           </div>
         </div>
 
@@ -433,14 +492,63 @@
               <span class="text text--xl text--b">$96.00/</span>
               <span class="text text--sm text--muted text--b">day</span>
             </div>
-            <button class="car-info__mini-rent-button text">Rent Now</button>
+            <button class="car-info__mini-rent-button line-height text">Rent Now</button>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </div>
 
     <footer class="footer">
+      <div class="flex-between">
+      <div>
+       <div class="text text--color text--large text--b title">MORENT</div>
+       <p class="line-height--l text text--dark">Our vision is to provide convenience <br>
+         and help increase your sales business.</p>
+      </div>
+      <div class="flex-between">
+        <div class="contacts">
+         <p class="text text--bold text--black text--xl letter-spacing">About</p>
+         <div class="text text--dark">
+          <p>How it works</p>
+          <p>Featured</p> 
+          <p>Partnership</p>
+          <p>Bussiness Relation</p>
+         </div>
+        </div>
 
+        <div class="contacts">
+          <p class="text text--bold text--black text--xl letter-spacing">Community</p>
+          <div class="text text--dark">           
+            <p>Events</p>
+            <p>Blog</p> 
+            <p>Podcast</p>
+            <p>Invite a friend</p>
+           </div>
+        </div>
+
+        <div class="contacts">
+          <p class="text text--bold text--black text--xl letter-spacing">Socials</p>
+          <div class="text text--dark">                
+            <p>Discord</p>
+            <p>Instagram</p> 
+            <p>Twitter</p>
+            <p>Facebook</p>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-bottom">
+    <hr>
+  </div>
+    <div class="flex-between line-height--l">
+      <div class="text text--bold text--black">©2022 MORENT. All rights reserved</div>
+      <div class="security flex-between text text--bold text--black">
+       <div>Privacy & Policy</div>
+       <div>Terms & Condition</div>
+      </div>
+    </div>
     </footer>
   </body>
 </html>

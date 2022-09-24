@@ -1,12 +1,14 @@
 body {
   background-color: rgb(234, 234, 234);
+  max-width: 1440 px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 32px;
 }
 
 .main {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  padding: 32px;
   max-width: 1016px;
   height: 100%;
+  padding-bottom: 32px;
 }
 
 .hero-section {
@@ -20,7 +22,7 @@ body {
   justify-content: space-between;
 }
 
-.characteristic-flex-between {
+.specs__item {
   display: flex;
   justify-content: space-between;
   max-width: 184px;
@@ -31,6 +33,15 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #3d5278;
+}
+
+.text--wee {
+  font-size: 12px;
+  line-height: 18px;
+  color: #94a7cb;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding-bottom: 28px;
 }
 
 .text--sm {
@@ -44,10 +55,26 @@ body {
   line-height: 25.2px;
 }
 
+.text--large {
+  font-size: 32px;
+}
+
 .text--b {
   font-weight: 700;
   color: #1a202c;
   letter-spacing: 0.02em;
+}
+
+.text--color {
+  color: #3563e9;
+}
+
+.text--dark {
+  color: #13131399;
+}
+
+.text--black {
+  color: #131313;
 }
 
 .text--muted {
@@ -58,7 +85,21 @@ body {
   font-weight: 600;
 }
 
-.hero-section__img_block {
+.sidebar {
+  padding: 32px;
+  background: white;
+}
+
+.sidebar__checkbox {
+  display: block;
+  padding-bottom: 24px;
+}
+
+.sidebar__input {
+  width: 276px;
+}
+
+.hero-section__img_container {
   width: 492px;
   height: 508px;
 }
@@ -79,9 +120,8 @@ body {
   padding: 6px;
 }
 
-.hero_section__description_block {
+.hero_section__description {
   background: white;
-
   justify-content: space-between;
   padding: 24px 24px 0px 24px;
   border-radius: 10px;
@@ -100,51 +140,60 @@ span {
   height: 18px;
 }
 
-.reviews__rating {
+.rating__img {
   height: 16px;
   width: 110px;
+  padding-right: 3px;
 }
 
-span-reviewer {
+.reviewer {
   letter-spacing: 0.02em;
   padding-left: 10px;
 }
 
-.description_block__reviews {
+.description__reviews {
   display: flex;
   justify-content: flex-start;
   padding-top: 12px;
 }
 
-.description_block__desc {
+.description__container {
   line-height: 40px;
   text-align: justify;
   padding: 44px 0px 12px;
   margin: 0px;
 }
 
-.characteristics {
+.specs {
   height: 120px;
   padding-top: 24px;
 }
 
-.description_block__price {
+.description__price {
   padding-top: 40px;
   letter-spacing: -0.02em;
 }
 
-span-price {
+.price {
   font-size: 28px;
   font-weight: 700;
 }
 
 .price__rent-button {
-  padding: 16px 32px;
+  padding: 20px 30px;
   background: #3563e9;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.line-height {
+  line-height: 20px;
+}
+
+.line-height--l {
+  line-height: 32px;
 }
 
 .all-reviews {
@@ -154,22 +203,23 @@ span-price {
   border-radius: 10px;
 }
 
-span-number {
+.all-reviews__number {
   background: #3563e9;
   color: white;
   padding: 6px 16px;
   border-radius: 4px;
+  margin: 0px;
+  margin-left: 12px;
 }
 
-.all-reviews__reviews {
+.all_reviews__total {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: #1a202c;
   max-width: 142px;
 }
 
-.reviewer-info__photo-reviewer {
+.reviewer-info__avatar {
   height: 56px;
   width: 56px;
   padding-right: 10px;
@@ -186,11 +236,11 @@ span-number {
   padding: 26px 0px 0px 6px;
 }
 
-.reviews__date {
+.rating__date {
   text-align: right;
 }
 
-.reviews {
+.rating {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
@@ -198,7 +248,7 @@ span-number {
 
 .reviews__feedback {
   height: 56px;
-  padding-left: 82px;
+  padding-left: 72px;
   line-height: 200%;
 }
 
@@ -217,10 +267,6 @@ span-number {
 
 .recent-car-view {
   padding: 42px 50px 26px 28px;
-}
-
-.recent-car-view__item {
-  color: #3563e9;
 }
 
 .car-info {
@@ -263,6 +309,38 @@ span-number {
 }
 
 .footer {
-  max-width: 1440px;
   background-color: #ffffff;
+  padding: 80px 60px;
+}
+
+.title {
+  line-height: 38px;
+  letter-spacing: 1px;
+  padding-bottom: 16px;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.letter-spacing {
+  letter-spacing: 0;
+}
+
+.contacts {
+  padding: 0px 74px 60px 0px;
+}
+
+hr {
+  border: 1px solid rgba(19, 19, 19, 0.16);
+}
+
+.security {
+  max-width: 326px;
+  width: 100%;
+}
+
+.padding-bottom {
+  padding-bottom: 60px;
 }
