@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(234, 234, 234);
+  background-color: #f6f7f9;
   max-width: 1440 px;
   font-family: "Plus Jakarta Sans", sans-serif;
   padding: 32px;
@@ -8,7 +8,7 @@ body {
 .main {
   max-width: 1016px;
   height: 100%;
-  padding-bottom: 32px;
+  padding: 32px 0px;
 }
 
 .hero-section {
@@ -83,6 +83,45 @@ body {
 
 .text--bold {
   font-weight: 600;
+}
+
+.header {
+  background: white;
+  padding: 40px;
+  display: flex;
+  padding: 40px 32px 40px 60px;
+}
+
+.header__container {
+  width: 25rem;
+  height: 100%;
+  position: relative;
+}
+
+.header__searchbar {
+  max-width: 330px;
+  width: 100%;
+  border: 1px solid #c3d4e966;
+  border-radius: 10rem;
+  padding: 12px 20px 12px 64px;
+}
+
+.header__img-search {
+  height: 19px;
+  position: absolute;
+  top: 12px;
+  padding-left: 22px;
+}
+
+.header__img-setting {
+  height: 19px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.header__padding-morent {
+  padding-right: 64px;
 }
 
 .sidebar {
